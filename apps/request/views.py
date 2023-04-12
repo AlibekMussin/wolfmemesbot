@@ -4,7 +4,7 @@ from django.conf import settings
 import telebot
 from .models import MemesRequest
 
-bot = telebot.TeleBot(settings.TELEGRAM_BOT_TOKEN)
+bot = telebot.TeleBot(settings.TOKEN)
 
 @csrf_exempt
 def telegram_webhook(request):
